@@ -16,7 +16,7 @@
     "paths": {
       "@": ["./src/*"]
     },
-    "types": ["vite/client", "@vitest/globals"]
+    "types": ["vite/client", "vitest/globals"]
   },
   "include": [
     "src/**/*.ts",
@@ -25,5 +25,6 @@
     "src/**/*.vue",
     "test"
   ],
+  "exclude": ["test"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

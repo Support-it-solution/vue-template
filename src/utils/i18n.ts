@@ -1,7 +1,7 @@
-import { createI18n } from 'vue-i18n'
+import { createI18n, I18nOptions } from 'vue-i18n'
 // import { createI18n } from 'vue-i18n'
 
-const messages: any = {
+const messages = {
   en: {
     hello: 'Hello'
   },
@@ -10,7 +10,8 @@ const messages: any = {
   }
 }
 type MessageSchema = typeof messages
-export const i18n = createI18n<[MessageSchema], 'en-US' | 'uz-UZ'>({
+
+export const i18n = createI18n<I18nOptions, [MessageSchema], 'en-US' | 'uz-UZ'>({
   legacy: false,
   locale: 'en',
   fallbackLocale: 'en',
